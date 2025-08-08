@@ -34,7 +34,7 @@ All measurements were carried out at room temperature at Helios Lab+ Helmholtz I
 - Excel
 
 🧼 Spectral Pre-processing
-Baseline Correction: Asymmetric Least Squares (ASLS)
+- Baseline Correction: Asymmetric Least Squares (ALS)
 - Normalization:
   - Standard Normal Variate (SNV)
   - Multiplicative Scatter Correction (MSC)
@@ -46,16 +46,16 @@ To support model development, a correlation analysis between the normalised inte
 -  Copper (Cu): Strong emission lines at 324.75 nm, 327.40 nm, and 510.55 nm showed high correlation (R² > 0.90) across all datasets.
 -  Silicon (Si): Peaks at 251.61 nm, 288.16 nm, and 390.55 nm correlated well (R² > 0.95) in combined and BAM/ERM-EB datasets, but correlations dropped slightly in Oetinger samples, likely due to sample variability.
 -  Magnesium (Mg): Four peaks (285.21, 383.23, 383.83, 518.36 nm) showed strong correlations (R² = 0.95–0.97) in combined and BAM/ERM-EB datasets using SNV normalization. Correlation decreased in Oetinger samples, especially at 285.21 nm (R² = 0.67), but improved with multiplicative scatter correction (MSC) up to R² = 0.80.
--  Manganese (Mn): Peaks at 403.08 nm and 403.31 nm had moderate correlations (R² = 0.75–0.85) in BAM/ERM-EB and combined datasets with SNV. In Oetinger samples, correlations were stronger (R² = 0.94–0.95) using SNV and MSC, indicating more stable Mn signals in industrial alloys.
--  Zinc (Zn): Showed poor correlation in Oetinger samples and was excluded from modeling for that group.
+-  Manganese (Mn): Peaks at 403.08 nm and 403.31 nm had moderate correlations (R² = 0.75–0.85) in BAM/ERM-EB and combined datasets with SNV. In commmrcial cast-alloys (Oetinger samples), correlations were stronger (R² = 0.94–0.95) using SNV and MSC, indicating more stable Mn signals in industrial alloys.
+-  Zinc (Zn): Showed poor correlation in commercial cast-alloys (Oetinger samples) and was excluded from modeling for that group.
 
 ✔️ Model Development and Validation 
  - Development and comparison of regression models included:
-  - Partial Least Squares Regression (PLSR)
-  - Least Absolute Shrinkage and Selection Operator (LASSO)
-  - Ridge Regression
-  - Elasticnet Regression
- - Validation: Leave-One-Out Cross-Validation (LOOCV)
+    - Partial Least Squares Regression (PLSR)
+    - Least Absolute Shrinkage and Selection Operator (LASSO)
+    - Ridge Regression
+    - Elasticnet Regression
+    - Validation: Leave-One-Out Cross-Validation (LOOCV)
 
 🥇  Best Performance 
 
@@ -91,9 +91,7 @@ To support model development, a correlation analysis between the normalised inte
 | Mg      | 0.959 | 0.216     | 0.166    | 20.80%         | PLSR   | SNV      |
 | Si      | 0.939 | 1.139     | 0.924    | 20.92%         | PLSR   | SNV      |
 
-
-
-🔍 LOOCV Performance Summary
+<br></br>🔍 LOOCV Performance Summary
 
 ### ✅ Leave-One-Out Cross-Validation (LOOCV) Performance
 
@@ -138,6 +136,6 @@ To support model development, a correlation analysis between the normalised inte
 While designed for aluminium alloys, the workflow is adaptable to other materials (e.g., drill cores, rock samples), supporting geological exploration, mining, and materials recycling.
 To adapt the workflow to such analytical tasks, reference samples with representative matrices and relevant grades of the element of interest are required.
    
-Overall Steps of the project
+✳️ Overall Steps of the project
 
 <img width="600" height="600" alt="Final Diagram " src="https://github.com/user-attachments/assets/30db7e23-038b-4e01-bd8f-20645ca9cda2" />
