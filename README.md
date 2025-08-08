@@ -135,7 +135,7 @@ To support model development, a correlation analysis between the normalised inte
 🗺️ Applications
 While designed for aluminium alloys, the workflow is adaptable to other materials (e.g., drill cores, rock samples), supporting geological exploration, mining, and materials recycling.
 To adapt the workflow to such analytical tasks, reference samples with representative matrices and relevant grades of the element of interest are required.
-   
-✳️ Overall Steps of the project
+
+✳️ Project Walk-through
 
 <img width="600" height="600" alt="Final Diagram " src="https://github.com/user-attachments/assets/30db7e23-038b-4e01-bd8f-20645ca9cda2" />
