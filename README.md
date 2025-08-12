@@ -29,6 +29,7 @@ All measurements were carried out at room temperature at Helios Lab+ Helmholtz I
 -  Measurements at room temperature at Helmholtz Institute for Resource Technology, Freiberg, Germany
 
 📁 Tools Used
+- Laser-Induced Breakdown Spectroscopy (LIBS)
 - Python (Pandas, Scikit-learn, Matplotlib, Seaborn, Pybaselines etc.)
 - Jupyter Notebooks
 - Excel
